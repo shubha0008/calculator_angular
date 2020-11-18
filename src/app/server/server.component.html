@@ -1,0 +1,18 @@
+<div class = "card mx-auto">
+    <div class = "card-header">CALCULATOR</div>
+    <div class= "card-body">
+        <div class="form-group d-flex flex-row">
+            <input [(ngModel)]='num1' type="number" class = "form-control" name = "num1">
+            <input [(ngModel)]='num2' type="number" class = "form-control" name = "num2">
+        </div>
+    </div>
+    <div class= "card-body">
+        <button class="btn btn-danger" (click)="addition()">Add</button>
+        <button class="btn btn-success" (click)="subtract()">Subtract</button>
+        <button class="btn btn-info" (click)="multiply()">Multiply</button>
+        <button class="btn btn-primary" (click)="division()">Division</button>
+    </div>
+    <div class="card-footer">
+        {{ result }}
+    </div>
+</div> 
